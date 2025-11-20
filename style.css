@@ -1,10 +1,18 @@
 body {
-  background: #181828;
   min-height: 100vh;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #181828 10%, #253179 40%, #1e2141 100%);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
 }
 .platforms {
   display: flex;
@@ -32,3 +40,4 @@ body {
   width: 28px;
   height: 28px;
 }
+
