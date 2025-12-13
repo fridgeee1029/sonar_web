@@ -5,22 +5,35 @@
   <title>Sonar App — Android Edition</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Важно для мобильных -->
 </head>
 <body>
   <div class="center-content">
     <div class="left-block">
       <h1 class="main-title">Sonar App</h1>
       <p class="subtitle" style="margin-bottom:20px;">Android Edition</p>
-      <p style="color:#d9e6ff; margin-top:10px; font-size:1em;">
-        Нажмите кнопку ниже, чтобы скачать приложение для Android:
+      
+      <p style="color:#d9e6ff; margin-top:10px; font-size:1.1em;">
+        Нажмите кнопку ниже, чтобы скачать приложение:
       </p>
-      <a href="https://github.com/fridgeee1029/sonar_web/releases/download/v1.0/app-release.apk" class="platform-btn" style="margin-top:15px;">
+
+      <!-- Ссылка на файл. Если файл Sonar.apk лежит рядом с index.html, то путь просто "Sonar.apk" -->
+      <!-- Атрибут download заставляет браузер именно скачивать, а не открывать -->
+      <a href="Sonar.apk" class="platform-btn" style="margin-top:20px; width: fit-content;" download>
         <img src="icons/android.svg" alt="Android" class="icon">
         Скачать APK
       </a>
-      <p style="font-size:0.95em; color:#b5c8ea; margin-top:18px;">
-        ⓘ После скачивания APK-файла, при установке на устройстве может потребоваться разрешение на установку из неизвестных источников (это можно включить в настройках безопасности Android).
-      </p>
+
+      <div style="margin-top:30px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; border-left: 4px solid #00E5FF;">
+        <p style="font-size:0.9em; color:#b5c8ea; line-height: 1.5;">
+          <strong>ⓘ Инструкция по установке:</strong><br>
+          После скачивания запустите файл. Если система заблокирует установку, нажмите «Настройки» и разрешите установку из этого источника (браузера). Это безопасно.
+        </p>
+      </div>
+
+      <a href="index.html" style="display: block; margin-top: 30px; color: #00E5FF; text-decoration: none; font-size: 0.9em;">
+        ← Вернуться на главную
+      </a>
     </div>
   </div>
 </body>
