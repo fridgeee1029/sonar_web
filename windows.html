@@ -1,27 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Sonar App — Windows Edition</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать Sonar для Windows</title>
+    <style>
+        body {
+            background-color: #000000; /* Черный фон как в приложении */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #a0a0a0;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .download-btn {
+            background-color: #00E5FF; /* Colors.cyanAccent */
+            color: #000;
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.7);
+            background-color: #fff;
+        }
+
+        .instructions {
+            margin-top: 50px;
+            background: #111;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            text-align: left;
+            max-width: 500px;
+        }
+
+        .instructions h3 {
+            color: #00E5FF;
+            margin-top: 0;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+            color: #ccc;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <div class="center-content">
-    <div class="left-block">
-      <h1 class="main-title">Sonar App</h1>
-      <p class="subtitle" style="margin-bottom:20px;">Windows Edition</p>
-      <p style="color:#d9e6ff; margin-top:10px; font-size:1em;">
-        Нажмите кнопку ниже, чтобы скачать приложение для Windows:
-      </p>
-      <a href="https://github.com/fridgeee1029/sonar_web/releases/download/v2.0/sonar_app.exe" class="platform-btn" style="margin-top:15px;">
-        <img src="icons/windows.svg" alt="Windows" class="icon">
+
+
+    <h1>SONAR</h1>
+    <p>Профессиональный гитарный тюнер и метроном.<br>Теперь доступен на Windows.</p>
+
+
+    <a href="https://github.com/fridgeee1029/web_sonar/raw/main/Sonar_Windows.zip" class="download-btn">
         Скачать для Windows
-      </a>
-      <p style="font-size:0.95em; color:#b5c8ea; margin-top:18px;">
-        ⓘ После скачивания запустите установочный файл и следуйте инструкциям. Windows может запросить подтверждение безопасности.
-      </p>
+    </a>
+    
+    <div style="margin-top: 15px; color: #555; font-size: 0.9rem;">
+        Версия 1.0.0 (x64) • ZIP архив
     </div>
-  </div>
+
+    <!-- Инструкция -->
+    <div class="instructions">
+        <h3>🚀 Как запустить:</h3>
+        <ol>
+            <li>Нажмите кнопку выше и скачайте архив.</li>
+            <li>Откройте скачанный файл.</li>
+            <li>Нажмите <b>"Извлечь всё"</b> (или просто перетащите папку на рабочий стол).</li>
+            <li>Зайдите в папку и запустите файл <b>Sonar.exe</b>.</li>
+        </ol>
+    </div>
+
+    <a href="index.html" class="back-link">← Вернуться на главную</a>
+
 </body>
 </html>
